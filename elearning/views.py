@@ -176,10 +176,10 @@ class ContentOrderView(JsonRequestResponseMixin, View):
         return self.render_json_response({'saved': 'OK'})
 
 
-'''???'''
+''''''
 
 
-#
+#View to SHOW all Courses
 class CourseListView(TemplateResponseMixin, View):
     model = Course
     template_name = 'courses/course/list.html'
@@ -206,7 +206,7 @@ class CourseListView(TemplateResponseMixin, View):
         return self.render_to_response({'subjects': subjects, 'subject': subject, 'courses': courses})
 
 
-#
+#View to SHOW the content of selected Course
 class CourseDetailView(DetailView):
     model = Course
     template_name = 'courses/course/detail.html'
