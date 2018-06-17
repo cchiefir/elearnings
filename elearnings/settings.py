@@ -89,7 +89,7 @@ CACHES = {
 }
 
 CACHE_MIDDLEWARE_ALIAS = 'default'
-CACHE_MIDDLEWARE_SECONDS = 60*1                            # 1 minute
+#CACHE_MIDDLEWARE_SECONDS = 60*1                            # 1 minute
 #CACHE_MIDDLEWARE_KEY_PREFIX = 'elearnings'
 
 

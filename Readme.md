@@ -206,7 +206,10 @@ Content example:
  HTTP 403: Forbidden
  {
     "detail": "You do not have permission to perform this action."
- }
+ },
+ {
+    "detail": "Authentication credentials were not provided."
+}
  HTTP 405: Method Not Allowed
  {
     "detail": "Method \"GET\" not allowed."
@@ -265,7 +268,10 @@ Content example:
  HTTP 403: Forbidden
  {
     "detail": "You do not have permission to perform this action."
- }
+ },
+ {
+    "detail": "Authentication credentials were not provided."
+}
  ```
 
 
