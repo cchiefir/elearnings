@@ -73,36 +73,6 @@ Content example:
 
 ________________________________________________________________________
 #### Title:
-Show all available subjects.
-##### URL:
-```
-/subjects/
-```
-##### Method:
-```
-GET
-```
-##### URL Params:
---
-##### Data Params:
---
-##### Success Response:
-Code: 200 <br>
-Content example:
-```
-[
-    {
-        "id": 2,
-        "title": "Mathematics",
-        "slug": "mathematics"
-    }
- ]
-```
-##### Error Response:
---
-
-________________________________________________________________________
-#### Title:
 Show details for 1 selected subject
 ##### URL:
 ```
