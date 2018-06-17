@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.exceptions import ObjectDoesNotExist
 
+# Custom model field to order Modules inside 1 course.
 class OrderField(models.PositiveIntegerField):
 
     def __init__(self, for_fields = None, *args, **kwargs):

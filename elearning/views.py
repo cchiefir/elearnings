@@ -48,7 +48,7 @@ class OwnerCourseEditMixin(OwnerCourseMixin, OwnerEditMixin):
     template_name = 'courses/manage/course/form.thml'
 
 
-'''Views'''
+'''Managment Views'''
 
 #View to SHOW list of Courses
 class ManageCourseListView(OwnerCourseMixin, ListView):
@@ -75,6 +75,7 @@ class CourseDeleteView(PermissionRequiredMixin, OwnerCourseMixin, DeleteView):
     success_url = reverse_lazy('elearning:manage_course_list')
     permission_required = 'courses.delete_course'
 
+
 # View to UPDATE Course+Module
 class CourseModuleUpdateView(TemplateResponseMixin, View):
     template_name = 'courses/manage/module/formset.html'
@@ -97,6 +98,7 @@ class CourseModuleUpdateView(TemplateResponseMixin, View):
             formset.save()
             return redirect('elearning:manage_course_list')
         return self.render_to_response({'course': self.course, 'formset': formset})
+
 
 # View to ADD different types content to Course
 class ContentCreateUpdateView(TemplateResponseMixin, View):
@@ -176,8 +178,7 @@ class ContentOrderView(JsonRequestResponseMixin, View):
         return self.render_json_response({'saved': 'OK'})
 
 
-''''''
-
+'''Views to show Courses'''
 
 #View to SHOW all Courses
 class CourseListView(TemplateResponseMixin, View):
